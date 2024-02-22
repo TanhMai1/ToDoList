@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.text.format.DateFormat;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -36,5 +38,15 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         TextView dataLabel = findViewById(R.id.dateLabel);
         dateLabel.setText(DateFormat.format("MM/dd/yyyy", selectedTime));
         currentTask.setDueDate(selectedTime);
+    }
+
+    private void initChangeDateButton(){
+        Button changeDate = findViewById(R.id.changeDateButton);
+        changeDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }

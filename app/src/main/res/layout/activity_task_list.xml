@@ -81,14 +81,14 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <ImageButton
+        <Button
             android:id="@+id/settingBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#00A12828"
-            android:contentDescription="settings Button"
-            android:src="@android:drawable/ic_menu_sort_by_size" />
+            android:layout_width="98dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="8dp" />
 
     </LinearLayout>
 

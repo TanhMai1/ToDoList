@@ -137,7 +137,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="417dp"
         android:layout_height="47dp"
-        android:background="#00233A"
+        android:background="#BA8DED"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -147,53 +147,53 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:text="Add Task"
+            android:text="To Do List Add Task"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/listButton"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.4" />
 
-        <ImageButton
-            android:id="@+id/listButton"
-            android:layout_width="44dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="24dp"
-            android:background="#ABFFFFFF"
-            android:contentDescription="toListofTasks"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="?attr/homeAsUpIndicator" />
-
-        <ImageButton
-            android:id="@+id/settingsButton"
-            android:layout_width="74dp"
-            android:layout_height="64dp"
-            android:layout_marginEnd="4dp"
-            android:background="#00FFFFFF"
-            android:contentDescription="toSettings"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.992"
-            app:layout_constraintStart_toEndOf="@+id/taskTitle"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/settingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Settings"
+        android:textColor="#FBFBFB"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/saveBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="48dp"
         android:text="Save"
         android:textColor="#FBFBFB"
         app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="List Of Task"
+        android:textColor="#FBFBFB"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
